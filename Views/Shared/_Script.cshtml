@@ -1,0 +1,12 @@
+﻿<script>
+    $(document).ready(function () {
+        
+        if ('@TempData["msg"]' != '')
+        {
+            $('#ModalAlert').modal('show');
+            setTimeout(function () {
+            $('#ModalAlert').modal('hide');
+            }, 3000);
+        }
+    });
+</script>
